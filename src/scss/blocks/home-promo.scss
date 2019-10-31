@@ -1,0 +1,237 @@
+.home-promo {
+
+    margin-bottom: 14px;
+
+    .container {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.home-promo__slider {
+
+    width: 73%;
+    padding: 0 13px;
+
+    background-image: url(../img/home-promo/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-promo__list {
+    width: 85%;
+}
+
+.home-promo__btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(#000, .46);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    transition: .7s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+.home-promo__btn-back {
+    background-image: url(../../img/home-promo/arrow-back.png);
+}
+
+.home-promo__btn-next {
+    background-image: url(../../img/home-promo/arrow-next.png);
+}
+
+.home-promo__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0;
+
+    color: #fff;
+}
+
+.home-promo__slider-block {
+    text-align: center;
+}
+
+
+.home-promo__bookname {
+    font-size: 47px;
+    font-weight: 700;
+    margin-top: 95px;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.home-promo__edition {
+    font-size: 25px;
+}
+
+.home-promo__author {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.home-promo__month {
+    width: 25%;
+    background: radial-gradient(#9d9d9d, #5c5c5c);
+    color: #fff;
+    text-align: center;
+
+    padding: 18px 22px 0;
+}
+
+.home-promo__month-title {
+    font-size: 27px;
+
+    white-space: nowrap;
+}
+
+
+.home-promo__month-descr {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+
+}
+
+.home-promo__month-picture {
+    position: relative;
+    margin-bottom: 27px;
+
+    &:before {
+        content: '';
+        width: 176px;
+        height: 24px;
+
+        background-image: url(../img/home-promo/bg.png);
+
+        position: absolute;
+        left: 50%;
+        bottom: -13px;
+        transform: translateX(-50%);
+
+        z-index: 10;
+    }
+
+    .home-promo__month-img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+
+.home-promo__sale {
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.home-promo__price {
+    font-size: 29px;
+    margin-bottom: 7px;
+}
+
+.home-promo__month-bth {
+    color: #fff;
+    font-size: 18px;
+    background-color: #59b359;
+    padding: 4px 15px;
+
+    border-radius: 3px;
+
+    transition: .7s;
+
+    margin-bottom: 7px;
+
+    &:hover {
+        color: #59b359;
+        background-color: #fff;
+    }
+}
+
+.home-books__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    
+}
+
+.home-books__item {
+    padding: 13px 26px;
+
+
+    background-color: #e4e4e4;
+    border: 1px solid #d6d6d6;
+    box-shadow: inset 1px 0 0 rgba(#ffffff, .6), 0 3px 3px #fff;
+
+    transition: .7s;
+
+    .homebooks-btn {
+        text-shadow: 1px 1px 0 #ffffff;
+        font-family: helvetica, sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        color: #6b6969;
+
+        background-color: transparent;
+        background: none;
+        transition: .7s;
+    }
+
+    &:hover {
+        background-color: $green;
+
+        .homebooks-btn {
+            color: #fff;
+            text-shadow: none;
+        }
+    }
+}
+
+
+
+.home-books__item.active {
+
+    background-color: transparent;
+    border-bottom: none;
+
+    .homebooks-btn {
+        color: #000;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: $green;
+
+        .homebooks-btn {
+            color: #fff;
+            text-shadow: none;
+        }
+    }
+}

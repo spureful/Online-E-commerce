@@ -1,0 +1,33 @@
+extends layout.pug
+
+
+block variables
+    - var title = 'Home'
+    - var bookTitle = ''
+    - var categoriesTitle = 'all'
+  
+  
+block content
+    include common/home-promo
+    .wrap-home
+        .container
+            aside.aside
+                include common/categories.pug
+            .home-books
+                ul.home-books__list
+                    li.home-books__item.active
+                        button(type='button').homebooks-btn Best sellers
+                    li.home-books__item
+                        button(type='button').homebooks-btn New Arrivals
+                    li.home-books__item
+                        button(type='button').homebooks-btn Used Books
+                    li.home-books__item
+                        button(type='button').homebooks-btn Special Offers
+                
+                include common/books
+    include common/booklists
+        
+        
+
+
+  

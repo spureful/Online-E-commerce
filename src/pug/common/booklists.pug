@@ -1,0 +1,30 @@
+.booklists
+    .container
+        .booklists__block
+            h3.booklists__title Biography & True Stories
+            ul.booklists__list
+                - var booklistsItems = [    'General',    'Diaries, Letters & Journals',    'Memoirs',    ' True Stories',  'Generic Exams', 'GK Titles',   'Medical Entrance',    'Other Entrance Exams',     'PG Entrance Examinations' ,     'Self-help Titles',     'Sociology']
+                    each booklistsItem in booklistsItems
+                        li.booklists__item
+                            a.booklists__link(href="#") #{booklistsItem}
+        .booklists__block
+            h3.booklists__title Professional & Reference 
+            ul.booklists__list
+                - var booklistsItems = [    'Academic and Reference',    'Business Trade',    'Engineering and Computer Science',    'Humanities, Social Sciences and Languages',     'Introduction to Computers',    'Science and Maths',     'Trade Business',     'English Language & Literature',     'English Language Teaching',     'Environment Awareness',     'Environment Protection' ]
+                    each booklistsItem in booklistsItems
+                        li.booklists__item
+                            a.booklists__link(href="#") #{booklistsItem}
+        .booklists__block
+            h3.booklists__title Earth Sciences
+            ul.booklists__list
+                - var booklistsItems = ['Earth Sciences', 'Geography','The Environment', 'Regional & Area Planning', 'Fantasy','Gay','Humorous', 'Interactive', 'Legal', 'Lesbian', "Men'S Adventure"]
+                    each booklistsItem in booklistsItems
+                        li.booklists__item
+                            a.booklists__link(href="#") #{booklistsItem}
+        .booklists__block
+            h3.booklists__title Mathematics
+            ul.booklists__list
+                - var booklistsItems = [ 'Algebra','Differential Equations','Discrete Mathematics', 'Fourier Analysis', "N'umerical Analysis", 'Probability', 'Statistical Methods/data Analysis', 'Stochastic And Random Processes', 'Topology', 'Statistics', 'Mathematics']
+                    each booklistsItem in booklistsItems
+                        li.booklists__item
+                            a.booklists__link(href="#") #{booklistsItem}

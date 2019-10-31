@@ -1,0 +1,8 @@
+header.header
+    .container
+        nav.nav
+            ul.nav__list
+                - var menuItems = [   'Sign in' ,    ' My Account',     ' Order Status' ,     'Help']
+                        each menuItem in menuItems
+                            li.nav__item
+                                a.nav__link(href="#") #{menuItem}

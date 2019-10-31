@@ -1,0 +1,15 @@
+extends layout.pug
+
+
+block variables
+    - var title = 'Category'
+    - var bookTitle = 'Science Fiction'
+    - var categoriesTitle = 'Science'
+  
+  
+block content
+    include common/home-promo
+    .wrap-home
+        .container
+            aside.aside
+            include common/books

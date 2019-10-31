@@ -1,0 +1,32 @@
+section.categories
+    h2.categories__title categories
+    .categories__block
+        - var catSubtitle = 'all'
+        h3.categories__subtitle.categories__subtitle--all(class=(categoriesTitle === catSubtitle) ? 'active': '')  #{catSubtitle}
+    .categories__block
+        
+        - var catSubtitle = 'Fiction & Literature'
+        h3.categories__subtitle(class=(categoriesTitle === catSubtitle) ? 'active': '')  #{catSubtitle}
+        ul.categories__list
+            - var categoriesFictionItems =['Children','Science Fiction','Fantasy','Mystery','Romance','Horror','Poetry','Literature','Crime']
+                each categoriesFictionItem in categoriesFictionItems
+                    li.categories__item(class=(categoriesTitle === categoriesFictionItem) ? 'active': '')
+                        a.categories__link #{categoriesFictionItem}
+    .categories__block
+      
+        - var catSubtitle = 'Non - Fiction'
+        h3.categories__subtitle(class=(categoriesTitle === catSubtitle) ? 'active': '')  #{catSubtitle}
+        ul.categories__list
+            - var categoriesNonFictionItems =['Comic','Cook','Psychology','Medical','Art','Photography','Law','History','Business','Computer']
+                each categoriesNonFictionItem in categoriesNonFictionItems
+                    li.categories__item
+                        a.categories__link #{categoriesNonFictionItem}
+    .categories__block
+      
+        - var catSubtitle = 'Other'
+        h3.categories__subtitle(class=(categoriesTitle === catSubtitle) ? 'active': '')  #{catSubtitle}
+        ul.categories__list
+            - var categoriesOtherItems =['Baby','Sex','Travel','Science','Sports']
+                each categoriesOtherItem in categoriesOtherItems
+                    li.categories__item
+                        a.categories__link #{categoriesOtherItem}

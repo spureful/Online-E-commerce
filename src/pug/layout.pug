@@ -1,0 +1,27 @@
+include ./common/_mixins
+block variables
+
+doctype html
+html(lang="Ru ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title E - commerce #{title}
+    link(rel="stylesheet", href="css/main.css")
+    
+	
+  body
+    .wrapper
+      include common/header.pug
+      
+      main.main
+        include common/search
+        include common/genres
+      
+        block content
+      include common/footer
+
+    script(src="js/scripts.js")
+
+	

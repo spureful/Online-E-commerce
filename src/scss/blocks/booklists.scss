@@ -1,0 +1,50 @@
+.booklists {
+    background-color: #434443;
+    color: #dddddd;
+    
+    .container {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 0 30px;
+    }
+
+}
+
+.booklists__title {
+    font-size: 20px;
+    font-weight: 300;
+    
+    margin-bottom: 20px;
+}
+
+.booklists__item {
+    position: relative;
+    padding: 4px 0;
+    
+    &:after {
+        content: '';
+        width: 172px;
+        height: 1px;
+        background-color: rgba(#ddd, 0.11);
+        
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.booklists__link {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: .7;
+    
+    transition: .7s;
+    
+    &:hover {
+        opacity: 1;
+    }
+}

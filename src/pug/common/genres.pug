@@ -1,0 +1,7 @@
+.genres
+    ul.genres__list
+        - var genreItems = ['Computers',       'Cooking' ,      'Education' ,      'Fiction',       'Health',        'Mathematics' ,      'Medical' ,      'Reference',       'Science']
+        - var navItem = 'Education'
+            each genreItem in genreItems
+                li.genres__item
+                    a(href='#').genres__link(class=(genreItem === navItem) ? 'active': '') #{genreItem}

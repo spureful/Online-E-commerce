@@ -1,0 +1,179 @@
+.search {
+    background-color: #f7f7f7;
+
+    .container {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 24px 0 18px;
+    }
+}
+
+.search__row {
+    background-color: $green;
+    border-radius: 3px;
+    padding: 4px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+
+.search__input {
+    width: 338px;
+    border: none;
+
+    border-radius: 3px;
+    padding: 5px;
+
+    margin-right: 9px;
+}
+
+.search__btn {
+    padding-left: 30px;
+    padding-right: 14px;
+    background-color: transparent;
+
+    font-size: 23px;
+    color: #fff;
+    font-weight: 300;
+
+    position: relative;
+    border: none;
+
+
+    transition: .7s;
+
+    &:before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/icons/loupe.svg);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transition: .7s;
+    }
+
+    &:hover {
+        transform: scale(.9);
+    }
+}
+
+
+.search__card {
+    position: relative;
+
+    color: #6d6d6d;
+    
+    padding-right: 7px;
+    
+    border-right: 1px solid #c3c3c3;
+
+    &:before {
+        content: '';
+        width: 27px;
+        height: 29px;
+
+        background-image: url(../img/icons/basket.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.search__card-text {
+    padding-left: 35px;
+    font-size: 23px;
+
+    margin-bottom: 4px;
+}
+
+.search__card-num {
+    font-size: 13px;
+}
+
+
+.search__card-price {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search__card-dollars {
+    font-size: 27px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.search__card-btn {
+    background-color: #303030;
+    border: none;
+    padding: 7px 11px 7px 7px;
+
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+    
+    transition: .7s;
+    
+    &:hover {
+        
+    background-color: $green;
+    }
+}
+
+.search__wishlist {
+    position: relative;
+    
+//    background-image: url(../img/icons/star.svg);
+//    background-repeat: no-repeat;
+//    background-position: 10px -10px;
+//    overflow: visible;
+    &:before {
+//        звезда
+        content: '';
+        width: 25px;
+        height: 25px;
+        
+       background-image: url(../img/icons/star.svg);
+        
+        position: absolute;
+        left: 20px;
+        top: -13px;
+        
+    }
+}
+
+.search__wishlist-num {
+    text-align: center;
+ width: 28px;
+//   padding: 4px 5px;
+    background-color: $green;
+    border-radius: 8px;
+    
+    margin-left: calc(100% - 28px);
+    
+    color: #fff;
+    font-size: 13px;
+}
+
+
+.search__wishlist-text {
+    font-size: 21px;
+    color: #6d6d6d;
+}

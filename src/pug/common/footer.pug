@@ -1,0 +1,9 @@
+footer.footer
+    .footer__card
+        .footer__card-info  We accept all major Credit Card/Debit Card/Internet Banking 
+        ul.footer__card-list
+            - var cardImgs = ['mastercard.png', 'americanexpress.png', 'visa.png']
+                each cardImg in cardImgs
+                    li.footer__card-item
+                        +image(`cards/${cardImg}`, `image ${cardImg}`, 'footer__card-img')
+    .footer__copyright  Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates 

@@ -1,0 +1,18 @@
+.search
+    .container
+        .logo
+            +image('logo.png','logo', 'logo__img')
+        label.search__row
+            input(type='text').search__input
+            button(type='button').search__btn Search
+        .search__card
+            .search__card-text Your cart 
+                span.search__card-num (2 items)
+            .search__card-price
+                span.search__card-dollars $125.0
+                button(type='button').search__card-btn Checkout
+        .search__wishlist
+            .search__wishlist-num 20
+            .search__wishlist-text Wish list
+        
+        

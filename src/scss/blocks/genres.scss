@@ -1,0 +1,30 @@
+.genres {
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(#000, .2);
+    margin-bottom: 16px;
+}
+
+.genres__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: center;
+}
+
+.genres__link {
+    padding: 13px 12px 13px 18px;
+    //    background: linear-gradient(to bottom, #8dd070 10%, #7bb461 );
+    color: #5b5b5b;
+    font-size: 19px;
+    text-decoration: none;
+
+
+}
+
+.genres__link.active {
+    color: #fff;
+    background: linear-gradient(to bottom, #8dd070 10%, #7bb461);
+}

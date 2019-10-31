@@ -1,0 +1,22 @@
+.books
+    h2.books__title #{bookTitle}
+    ul.books__list 
+        - var booksItems = [{img: 'The_Hare_With_Amber_Eyes', name:'The Hare With Amber Eyes', price: '$50', sale: true }, {img: 'The_war_of__Art', name:'The war of Art', price: '$60', sale: false }, {img: '3', name:'The Hare With Amber Eyes', price: '$25', sale: true }, {img: '4', name:'The Immortals of Meluha', price: '$80', sale: false }, {img: '5', name:'Life Is What You Make It', price: '$200', sale: false }, {img: '6', name:'The Hare With Amber Eyes', price: '$200', sale: false }, {img: '7', name:'The war of Art', price: '$150', sale: false }, {img: '8', name:'The Hare With Amber Eyes', price: '$100', sale: true }, {img: '9', name:'The Immortals of Meluha', price: '$152', sale: false }, {img: '10', name:'Life Is What You Make It', price: '$200', sale: false }, {img: '11', name:'The Hare With Amber Eyes', price: '$220', sale: false }, {img: '12', name:'The war of Art', price: '$10', sale: false }, {img: '13', name:'The Hare With Amber Eyes', price: '$22', sale: false }, {img: '14', name:'The Immortals of Meluha', price: '$300', sale: true }, {img: '15', name:'Life Is What You Make It', price: '$205', sale: false }]
+            each booksItem in booksItems
+                li.books__item(class=(booksItem.sale ? 'sale' : ''))
+                    +image(`books/${booksItem.img}.jpg`, `book ${booksItem.name}`, 'books__img')
+                    .books__name #{booksItem.name}
+                    .books__price #{booksItem.price}
+    ul.books__paggination
+        li.books__paggination-item
+            a.books__paggination-link(href="#") 1
+        li.books__paggination-item
+            a.books__paggination-link(href="#") 2
+        li.books__paggination-item.active
+            a.books__paggination-link(href="#") 3
+        li.books__paggination-item
+            a.books__paggination-link(href="#") 4
+        li.books__paggination-item
+            a.books__paggination-link(href="#") 5
+        li.books__paggination-item
+            a.books__paggination-link(href="#") 6

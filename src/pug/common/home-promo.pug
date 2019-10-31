@@ -1,0 +1,20 @@
+section.home-promo
+    .container
+        .home-promo__slider
+            button(type='button').home-promo__btn.home-promo__btn-back
+            ul.home-promo__list
+                li.home-promo__item
+                    +image('home-promo/book.png', 'slider book', 'home-promo__slider-book')
+                    .home-promo__slider-block
+                        h2.home-promo__bookname A Wanted Man
+                        .home-promo__edition (Jack Reacher #17) 
+                        h3.home-promo__author By Lee Child 
+            button(type='button').home-promo__btn.home-promo__btn-next
+        .home-promo__month
+            h3.home-promo__month-title Deal of the Month
+            .home-promo__month-descr The Human Face of Big Data
+            .home-promo__month-picture
+                +image('home-promo/book-month.jpg', 'book of month', 'home-promo__month-img' )
+            .home-promo__sale Save 45% Today
+            .home-promo__price $27.50
+            button.home-promo__month-bth(type='button') Buy now
